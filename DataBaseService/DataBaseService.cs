@@ -7,7 +7,7 @@ public class DataBaseService
     public static async Task CreateDatabaseTable()
     {
         string connectionString =
-            "Host=localhost;Username=postgres;Password=hej123;Database=finance_app";
+            "Host=localhost; Username=postgres; Password=hej123; Database=finance_app";
         using var connection = new NpgsqlConnection(connectionString);
         await connection.OpenAsync();
 
@@ -31,10 +31,3 @@ public class DataBaseService
         await createTableCmd.ExecuteNonQueryAsync();
     }
 }
-
-
-
-
-
-
-

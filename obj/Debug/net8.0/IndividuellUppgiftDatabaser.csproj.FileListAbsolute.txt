@@ -17,3 +17,4 @@ C:\Users\alexa\Code\IndividuellUppgiftDatabaser\bin\Debug\net8.0\Microsoft.Exten
 C:\Users\alexa\Code\IndividuellUppgiftDatabaser\bin\Debug\net8.0\Npgsql.dll
 C:\Users\alexa\Code\IndividuellUppgiftDatabaser\obj\Debug\net8.0\IndividuellUppgiftDatabaser.csproj.AssemblyReference.cache
 C:\Users\alexa\Code\IndividuellUppgiftDatabaser\obj\Debug\net8.0\Individu.E9AE1C06.Up2Date
+C:\Users\alexa\Code\IndividuellUppgiftDatabaser\obj\Debug\net8.0\IndividuellUppgiftDatabaser.sourcelink.json

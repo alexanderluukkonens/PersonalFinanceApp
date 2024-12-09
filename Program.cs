@@ -4,10 +4,11 @@ namespace IndividuellUppgiftDatabaser;
 
 class Program
 {
-    
-    static void Main(string[] args)
+    static async Task Main(string[] args)
     {
-        MainMenu mainMenu = new MainMenu();
-        mainMenu.Display();
+        LoginMenu loginMenu = new LoginMenu();
+        loginMenu.Display();
+
+        await DataBaseService.CreateDatabaseTable();
     }
 }
