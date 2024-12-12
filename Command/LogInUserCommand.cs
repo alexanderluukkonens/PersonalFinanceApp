@@ -1,10 +1,19 @@
+using IndividuellUppgiftDatabaser;
+
 public class LogInUserCommand : Command
 {
-    public LogInUserCommand(string Name, IUserService userService)
-        : base(Name, userService) { }
+    public LogInUserCommand(IUserService userService, IMenuService menuService)
+        : base("1", userService, menuService) { }
 
     public override void Execute(string inputCommand)
     {
-        throw new NotImplementedException();
+        Console.Clear();
+        Console.WriteLine("Log In!");
+        Console.Write("Enter username: ");
+        string username = Console.ReadLine()!;
+        Console.Write("\nEnter password: ");
+        string password = Console.ReadLine()!;
+        userService.Login(username, password);
+        menuService.SetMenu(new MainMenu(userService, menuService));
     }
 }

@@ -18,7 +18,7 @@ public abstract class Menu
             if (inputCommand == command.KeyName)
             {
                 command.Execute(inputCommand);
-                Console.WriteLine(inputCommand);
+                return;
             }
         }
     }

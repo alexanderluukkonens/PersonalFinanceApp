@@ -18,7 +18,6 @@ public class SimpleMenuService : IMenuService
     public void SetMenu(Menu menu)
     {
         this.menu = menu;
-        this.menu.Display();
     }
 }
 
