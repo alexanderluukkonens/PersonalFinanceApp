@@ -2,6 +2,11 @@ namespace IndividuellUppgiftDatabaser;
 
 public class LoginMenu : Menu
 {
+    public LoginMenu(IUserService userService)
+    {
+        AddCommand(new RegisterUserCommand(userService));
+    }
+
     public override void Display()
     {
         Console.Write(

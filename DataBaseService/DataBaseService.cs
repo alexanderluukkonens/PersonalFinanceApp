@@ -4,13 +4,8 @@ namespace IndividuellUppgiftDatabaser;
 
 public class DataBaseService
 {
-    public static async Task CreateDatabaseTable()
+    public static async Task CreateDatabaseTable(NpgsqlConnection connection)
     {
-        string connectionString =
-            "Host=localhost; Username=postgres; Password=hej123; Database=finance_app";
-        using var connection = new NpgsqlConnection(connectionString);
-        await connection.OpenAsync();
-
         var createTablesSql =
             @"
             CREATE TABLE IF NOT EXISTS users (

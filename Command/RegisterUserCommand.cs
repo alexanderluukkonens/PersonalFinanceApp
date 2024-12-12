@@ -1,10 +1,12 @@
 public class RegisterUserCommand : Command
 {
-    public RegisterUserCommand(ConsoleKey Name, IUserService userService)
-        : base(Name, userService) { }
+    public RegisterUserCommand(IUserService userService)
+        : base("2", userService) { }
 
-    public override void Execute(string[] args)
+    public override void Execute(string inputCommand)
     {
+        Console.Clear();
         Console.WriteLine("Register Menu!");
+        Console.ReadKey();
     }
 }
