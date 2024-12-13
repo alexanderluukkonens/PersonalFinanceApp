@@ -46,7 +46,7 @@ public class PostgresUserService : IUserService
         cmd.Parameters.AddWithValue("@username", username);
         cmd.Parameters.AddWithValue("@password", password);
 
-        var reader = cmd.ExecuteReader();
+        using var reader = cmd.ExecuteReader();
         if (!reader.Read())
         {
             return null;

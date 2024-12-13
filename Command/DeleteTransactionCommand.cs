@@ -1,10 +1,12 @@
 public class DeleteTransactionCommand : Command
 {
-    public DeleteTransactionCommand(string Name, IUserService userService, IMenuService menuService)
-        : base(Name, userService, menuService) { }
+    public DeleteTransactionCommand(IUserService userService, IMenuService menuService)
+        : base("2", userService, menuService) { }
 
     public override void Execute(string inputCommand)
     {
-        throw new NotImplementedException();
+        Console.Clear();
+        Console.WriteLine("Delete transaction!");
+        Console.ReadKey();
     }
 }

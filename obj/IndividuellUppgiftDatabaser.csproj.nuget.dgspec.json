@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexa\\Code\\IndividuellUppgiftDatabaser\\IndividuellUppgiftDatabaser.csproj": {}
+    "C:\\Users\\alexa\\Desktop\\Programmering\\IndividuellUppgiftDatabaser\\IndividuellUppgiftDatabaser.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexa\\Code\\IndividuellUppgiftDatabaser\\IndividuellUppgiftDatabaser.csproj": {
+    "C:\\Users\\alexa\\Desktop\\Programmering\\IndividuellUppgiftDatabaser\\IndividuellUppgiftDatabaser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexa\\Code\\IndividuellUppgiftDatabaser\\IndividuellUppgiftDatabaser.csproj",
+        "projectUniqueName": "C:\\Users\\alexa\\Desktop\\Programmering\\IndividuellUppgiftDatabaser\\IndividuellUppgiftDatabaser.csproj",
         "projectName": "IndividuellUppgiftDatabaser",
-        "projectPath": "C:\\Users\\alexa\\Code\\IndividuellUppgiftDatabaser\\IndividuellUppgiftDatabaser.csproj",
+        "projectPath": "C:\\Users\\alexa\\Desktop\\Programmering\\IndividuellUppgiftDatabaser\\IndividuellUppgiftDatabaser.csproj",
         "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexa\\Code\\IndividuellUppgiftDatabaser\\obj\\",
+        "outputPath": "C:\\Users\\alexa\\Desktop\\Programmering\\IndividuellUppgiftDatabaser\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

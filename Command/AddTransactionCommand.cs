@@ -1,10 +1,12 @@
 public class AddTransactionCommand : Command
 {
-    public AddTransactionCommand(string Name, IUserService userService, IMenuService menuService)
-        : base(Name, userService, menuService) { }
+    public AddTransactionCommand(IUserService userService, IMenuService menuService)
+        : base("1", userService, menuService) { }
 
     public override void Execute(string inputCommand)
     {
-        throw new NotImplementedException();
+        Console.Clear();
+        Console.WriteLine("Addtransaction!");
+        Console.ReadKey();
     }
 }
