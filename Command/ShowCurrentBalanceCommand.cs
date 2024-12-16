@@ -1,7 +1,7 @@
 public class ShowCurrentBalanceCommand : Command
 {
-    public ShowCurrentBalanceCommand(IUserService userService, IMenuService menuService)
-        : base("3", userService, menuService) { }
+    public ShowCurrentBalanceCommand(IUserService userService, IMenuService menuService, ITransactionService transactionService)
+        : base("3", userService, menuService, transactionService) { }
 
     public override void Execute(string inputCommand)
     {

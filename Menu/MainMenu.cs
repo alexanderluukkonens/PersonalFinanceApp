@@ -1,14 +1,12 @@
-﻿namespace IndividuellUppgiftDatabaser;
-
-public class MainMenu : Menu
+﻿public class MainMenu : Menu
 {
-    public MainMenu(IUserService userService, IMenuService menuService)
+    public MainMenu(IUserService userService, IMenuService menuService, ITransactionService transactionService)
     {
-        AddCommand(new LogOutUserCommand(userService, menuService));
-        AddCommand(new AddTransactionCommand(userService, menuService));
-        AddCommand(new DeleteTransactionCommand(userService, menuService));
-        AddCommand(new ShowCurrentBalanceCommand(userService, menuService));
-        AddCommand(new ShowTransactionsCommand(userService, menuService));
+        AddCommand(new LogOutUserCommand(userService, menuService, transactionService));
+        AddCommand(new AddTransactionCommand(userService, menuService, transactionService));
+        AddCommand(new DeleteTransactionCommand(userService, menuService, transactionService));
+        AddCommand(new ShowCurrentBalanceCommand(userService, menuService, transactionService));
+        AddCommand(new ShowTransactionsCommand(userService, menuService, transactionService));
     }
 
     public override void Display()

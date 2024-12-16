@@ -1,7 +1,7 @@
 public class RegisterUserCommand : Command
 {
-    public RegisterUserCommand(IUserService userService, IMenuService menuService)
-        : base("2", userService, menuService) { }
+    public RegisterUserCommand(IUserService userService, IMenuService menuService, ITransactionService transactionService)
+        : base("2", userService, menuService, transactionService) { }
 
     public override void Execute(string inputCommand)
     {

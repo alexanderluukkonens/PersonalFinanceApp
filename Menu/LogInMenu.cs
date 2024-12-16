@@ -1,11 +1,9 @@
-namespace IndividuellUppgiftDatabaser;
-
 public class LoginMenu : Menu
 {
-    public LoginMenu(IUserService userService, IMenuService menuService)
+    public LoginMenu(IUserService userService, IMenuService menuService, ITransactionService transactionService)
     {
-        AddCommand(new RegisterUserCommand(userService, menuService));
-        AddCommand(new LogInUserCommand(userService, menuService));
+        AddCommand(new RegisterUserCommand(userService, menuService, transactionService));
+        AddCommand(new LogInUserCommand(userService, menuService, transactionService));
     }
 
     public override void Display()

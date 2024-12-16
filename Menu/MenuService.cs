@@ -1,5 +1,3 @@
-using IndividuellUppgiftDatabaser;
-
 public interface IMenuService
 {
     void SetMenu(Menu menu);

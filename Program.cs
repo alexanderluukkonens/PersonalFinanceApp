@@ -1,7 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using Npgsql;
-
-namespace IndividuellUppgiftDatabaser;
+﻿using Npgsql;
 
 class Program
 {
@@ -19,7 +16,8 @@ class Program
         Console.Clear();
         IUserService userService = new PostgresUserService(connection);
         IMenuService menuService = new SimpleMenuService();
-        LoginMenu loginMenu = new LoginMenu(userService, menuService);
+        ITransactionService transactionService = new PostgresTransactionService(connection, userService);
+        LoginMenu loginMenu = new LoginMenu(userService, menuService, transactionService);
         menuService.SetMenu(loginMenu);
 
         while (isRunning)

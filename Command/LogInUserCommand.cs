@@ -1,9 +1,11 @@
-using IndividuellUppgiftDatabaser;
-
 public class LogInUserCommand : Command
 {
-    public LogInUserCommand(IUserService userService, IMenuService menuService)
-        : base("1", userService, menuService) { }
+    public LogInUserCommand(
+        IUserService userService,
+        IMenuService menuService,
+        ITransactionService transactionService
+    )
+        : base("1", userService, menuService, transactionService) { }
 
     public override void Execute(string inputCommand)
     {
@@ -14,6 +16,6 @@ public class LogInUserCommand : Command
         Console.Write("\nEnter password: ");
         string password = Console.ReadLine()!;
         userService.Login(username, password);
-        menuService.SetMenu(new MainMenu(userService, menuService));
+        menuService.SetMenu(new MainMenu(userService, menuService, transactionService));
     }
 }

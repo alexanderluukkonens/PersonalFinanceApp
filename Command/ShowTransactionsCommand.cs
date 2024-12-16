@@ -1,7 +1,7 @@
 public class ShowTransactionsCommand : Command
 {
-    public ShowTransactionsCommand(IUserService userService, IMenuService menuService)
-        : base("4", userService, menuService) { }
+    public ShowTransactionsCommand(IUserService userService, IMenuService menuService, ITransactionService transactionService)
+        : base("4", userService, menuService, transactionService) { }
 
     public override void Execute(string inputCommand)
     {

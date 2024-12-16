@@ -1,7 +1,5 @@
 ﻿using Npgsql;
 
-namespace IndividuellUppgiftDatabaser;
-
 public class DataBaseService
 {
     public static async Task CreateDatabaseTable(NpgsqlConnection connection)

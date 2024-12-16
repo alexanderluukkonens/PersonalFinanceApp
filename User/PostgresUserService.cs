@@ -1,4 +1,4 @@
-namespace IndividuellUppgiftDatabaser;
+
 
 using Npgsql;
 

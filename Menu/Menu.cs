@@ -1,5 +1,3 @@
-namespace IndividuellUppgiftDatabaser;
-
 public abstract class Menu
 {
     private List<Command> commands = new List<Command>();

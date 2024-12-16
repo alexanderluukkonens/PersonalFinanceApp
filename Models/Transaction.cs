@@ -1,7 +1,3 @@
-using System;
-
-namespace IndividuellUppgiftDatabaser;
-
 public class Transaction
 {
     public Guid Transaction_id { get; init; }
