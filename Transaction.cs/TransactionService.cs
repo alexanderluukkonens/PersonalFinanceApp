@@ -1,7 +1,7 @@
 public interface ITransactionService
 {
-    Transaction AddTransaction(decimal amount, string description);
-    Transaction DeleteTransaction();
-    Transaction ShowCurrentBalance();
+    void AddTransaction(decimal amount, string description);
+    void DeleteTransaction(Guid transactionId);
+    decimal? ShowCurrentBalance();
     Transaction ShowTransactions();
 }

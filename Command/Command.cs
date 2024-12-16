@@ -4,7 +4,6 @@ public abstract class Command
 
     protected IUserService? userService;
     protected IMenuService menuService;
-
     protected ITransactionService transactionService;
 
     public Command(

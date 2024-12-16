@@ -19,11 +19,11 @@ public class PostgresUserService : IUserService
             return null;
         }
 
-        var sql = @"SELECT * FROM users WHERE id = @id";
+        var sql = @"SELECT * FROM users WHERE user_id = @user_id";
         using var cmd = new NpgsqlCommand(sql, this.connection);
-        cmd.Parameters.AddWithValue("@id", loggedInUser);
+        cmd.Parameters.AddWithValue("@user_id", loggedInUser);
 
-        var reader = cmd.ExecuteReader();
+        using var reader = cmd.ExecuteReader();
         if (!reader.Read())
         {
             return null;

@@ -12,9 +12,9 @@ public class AddTransactionCommand : Command
         Console.Clear();
         Console.WriteLine("Addtransaction!");
         Console.Write("Enter amount: ");
-        decimal amount = decimal.Parse(Console.ReadLine());
+        decimal amount = decimal.Parse(Console.ReadLine()!);
         Console.Write("Enter description: ");
-        string description = Console.ReadLine();
+        string description = Console.ReadLine()!;
         transactionService.AddTransaction(amount, description);
         menuService.SetMenu(new MainMenu(userService, menuService, transactionService));
         Console.ReadKey();
