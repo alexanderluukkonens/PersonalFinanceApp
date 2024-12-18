@@ -17,6 +17,6 @@ public class AddTransactionCommand : Command
         string description = Console.ReadLine()!;
         transactionService.AddTransaction(amount, description);
         menuService.SetMenu(new MainMenu(userService, menuService, transactionService));
-        Console.ReadKey();
+        Utilities.WaitForKey("Transaction added successfully!");
     }
 }

@@ -16,6 +16,7 @@ public class LogInUserCommand : Command
         Console.Write("\nEnter password: ");
         string password = Console.ReadLine()!;
         userService.Login(username, password);
+        Utilities.WaitForKey("Logged in successfully!");
         menuService.SetMenu(new MainMenu(userService, menuService, transactionService));
     }
 }
