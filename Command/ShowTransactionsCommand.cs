@@ -10,7 +10,7 @@ public class ShowTransactionsCommand : Command
     public override void Execute(string inputCommand)
     {
         Console.Clear();
-        Console.WriteLine("Show Statistic transaction!");
-        Console.ReadKey();
+        var transactionMenu = new TransactionMenu(userService, menuService, transactionService);
+        menuService.SetMenu(transactionMenu);
     }
 }

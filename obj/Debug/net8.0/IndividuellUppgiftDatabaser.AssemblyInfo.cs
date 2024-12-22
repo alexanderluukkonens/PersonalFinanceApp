@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IndividuellUppgiftDatabaser")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+284f8280813a2918a8b0a719c200c00e7a735552")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4131249bb18eb6a50335a9c589c5b25bcdeff094")]
 [assembly: System.Reflection.AssemblyProductAttribute("IndividuellUppgiftDatabaser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IndividuellUppgiftDatabaser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
