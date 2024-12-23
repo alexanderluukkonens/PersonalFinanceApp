@@ -9,11 +9,10 @@ public class LogInUserCommand : Command
 
     public override void Execute(string inputCommand)
     {
-        Console.Clear();
-        Console.WriteLine("Log In!");
+        Utilities.MenuHeading("Log in");
         Console.Write("Enter username: ");
         string username = Console.ReadLine()!;
-        Console.Write("\nEnter password: ");
+        Console.Write("Enter password: ");
         string password = Console.ReadLine()!;
         userService.Login(username, password);
         Utilities.WaitForKey("Logged in successfully!");

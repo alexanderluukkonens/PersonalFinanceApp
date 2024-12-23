@@ -9,8 +9,7 @@ public class AddTransactionCommand : Command
 
     public override void Execute(string inputCommand)
     {
-        Console.Clear();
-        Console.WriteLine("Addtransaction!");
+        Utilities.MenuHeading("Add transaction");
         Console.Write("Enter amount: ");
         decimal amount = decimal.Parse(Console.ReadLine()!);
         Console.Write("Enter description: ");

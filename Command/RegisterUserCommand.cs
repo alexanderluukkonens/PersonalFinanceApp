@@ -10,11 +10,12 @@ public class RegisterUserCommand : Command
     public override void Execute(string inputCommand)
     {
         Console.Clear();
-        Console.WriteLine("Register User!");
+        Utilities.MenuHeading("Create account");
         Console.Write("Enter username: ");
         string username = Console.ReadLine()!;
-        Console.Write("\nEnter password: ");
+        Console.Write("Enter password: ");
         string password = Console.ReadLine()!;
         userService.RegisterUser(username, password);
+        Utilities.WaitForKey("Creating account successfully!");
     }
 }

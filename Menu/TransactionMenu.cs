@@ -6,13 +6,14 @@ public class TransactionMenu : Menu
         ITransactionService transactionService
     )
     {
-        AddCommand(new ViewYearlyTransactionsCommand(userService, menuService, transactionService));
+        AddCommand(new YearlyTransactionsCommand(userService, menuService, transactionService));
         AddCommand(
-            new ViewMonthlyTransactionsCommand(userService, menuService, transactionService)
+            new MonthlyTransactionsCommand(userService, menuService, transactionService)
         );
-        AddCommand(new ViewWeeklyTransactionsCommand(userService, menuService, transactionService));
-        AddCommand(new ViewDailyTransactionsCommand(userService, menuService, transactionService));
+        AddCommand(new WeeklyTransactionsCommand(userService, menuService, transactionService));
+        AddCommand(new DailyTransactionsCommand(userService, menuService, transactionService));
         AddCommand(new ViewCustomTransactionsCommand(userService, menuService, transactionService));
+        AddCommand(new GobackInMenuCommand(userService, menuService, transactionService));
     }
 
     public override void Display()
@@ -29,7 +30,7 @@ public class TransactionMenu : Menu
 
             [6] Back to main menu
                    
-            Choose an option:
+            Choose an option: 
             """
         );
     }

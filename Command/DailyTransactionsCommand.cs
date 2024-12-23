@@ -1,6 +1,6 @@
-public class ViewDailyTransactionsCommand : Command
+public class DailyTransactionsCommand : Command
 {
-    public ViewDailyTransactionsCommand(
+    public DailyTransactionsCommand(
         IUserService userService,
         IMenuService menuService,
         ITransactionService transactionService

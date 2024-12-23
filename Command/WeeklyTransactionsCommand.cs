@@ -1,6 +1,6 @@
-public class ViewWeeklyTransactionsCommand : Command
+public class WeeklyTransactionsCommand : Command
 {
-    public ViewWeeklyTransactionsCommand(
+    public WeeklyTransactionsCommand(
         IUserService userService,
         IMenuService menuService,
         ITransactionService transactionService

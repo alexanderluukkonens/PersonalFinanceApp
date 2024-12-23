@@ -1,6 +1,6 @@
-public class ViewYearlyTransactionsCommand : Command
+public class YearlyTransactionsCommand : Command
 {
-    public ViewYearlyTransactionsCommand(
+    public YearlyTransactionsCommand(
         IUserService userService,
         IMenuService menuService,
         ITransactionService transactionService

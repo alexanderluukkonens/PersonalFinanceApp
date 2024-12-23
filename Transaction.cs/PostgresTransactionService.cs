@@ -95,7 +95,7 @@ public class PostgresTransactionService : ITransactionService
         }
     }
 
-    public decimal? ShowCurrentBalance()
+    public string ShowCurrentBalance()
     {
         User? user = userService.GetLoggedInUser();
         if (user == null)
@@ -116,7 +116,7 @@ public class PostgresTransactionService : ITransactionService
             return null;
         }
         decimal amount = reader.GetDecimal(0);
-        return amount;
+        return $"{amount:C}";
     }
 
     public Transaction ShowTransactions()

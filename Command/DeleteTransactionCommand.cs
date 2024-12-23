@@ -9,9 +9,7 @@ public class DeleteTransactionCommand : Command
 
     public override void Execute(string inputCommand)
     {
-        Console.Clear();
-        Console.WriteLine("Delete Transaction");
-        Console.WriteLine("----------------------------------------\n");
+       Utilities.MenuHeading("Delete transaction");
 
         try
         {
@@ -25,9 +23,8 @@ public class DeleteTransactionCommand : Command
                 return;
             }
 
-            Console.WriteLine("Your recent transactions:");
             Console.WriteLine("Index\tDate\t\tAmount\t\tDescription");
-            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("----------------------------------------------------");
 
             // Visa transaktioner med index
             for (int i = 0; i < transactions.Count; i++)
@@ -44,7 +41,7 @@ public class DeleteTransactionCommand : Command
             if (string.IsNullOrWhiteSpace(input))
             {
                 Console.WriteLine("Operation cancelled.");
-                Console.ReadKey();
+                Utilities.WaitForKey();
                 return;
             }
 
@@ -56,19 +53,6 @@ public class DeleteTransactionCommand : Command
 
             // Hämta transaktionen baserat på index
             var selectedTransaction = transactions[index - 1];
-
-            // Visa detaljer och bekräfta borttagning
-            Console.WriteLine("\nSelected transaction:");
-            Console.WriteLine($"Date: {selectedTransaction.Date:yyyy-MM-dd}");
-            Console.WriteLine($"Amount: {selectedTransaction.Amount:C2}");
-            Console.WriteLine($"Description: {selectedTransaction.Description}");
-
-            Console.Write("\nAre you sure you want to delete this transaction? (y/n): ");
-            if (Console.ReadLine()?.ToLower() != "y")
-            {
-                Utilities.WaitForKey("Deletion cancelled.");
-                return;
-            }
 
             transactionService.DeleteTransaction(selectedTransaction.Transaction_id);
             Utilities.WaitForKey("Transaction successfully deleted!");

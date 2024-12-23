@@ -12,7 +12,7 @@ public class LogOutUserCommand : Command
         userService.Logout();
         Console.Clear();
         menuService.SetMenu(new LoginMenu(userService, menuService, transactionService));
-        Console.WriteLine("Logged Out");
-        Console.ReadKey();
+        Console.WriteLine("Logged out!");
+        Utilities.WaitForKey();
     }
 }

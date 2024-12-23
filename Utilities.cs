@@ -9,4 +9,12 @@ public class Utilities
         Console.WriteLine("Press any key to continue...");
         Console.ReadKey(true);
     }
+    public static void MenuHeading(string text = "")
+    {
+        Console.Clear();
+        Console.WriteLine(text);
+        Console.WriteLine("----------------------------------------\n");
+    }
+
+
 }

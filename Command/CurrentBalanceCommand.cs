@@ -1,6 +1,6 @@
-public class ShowCurrentBalanceCommand : Command
+public class CurrentBalanceCommand : Command
 {
-    public ShowCurrentBalanceCommand(
+    public CurrentBalanceCommand(
         IUserService userService,
         IMenuService menuService,
         ITransactionService transactionService
@@ -9,9 +9,8 @@ public class ShowCurrentBalanceCommand : Command
 
     public override void Execute(string inputCommand)
     {
-        Console.Clear();
-        Console.WriteLine("ShowCurrent transaction!");
+        Utilities.MenuHeading("Current balance");
         Console.WriteLine(transactionService.ShowCurrentBalance());
-        Console.ReadKey();
+        Utilities.WaitForKey();
     }
 }

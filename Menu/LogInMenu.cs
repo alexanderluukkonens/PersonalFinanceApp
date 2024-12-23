@@ -22,7 +22,7 @@ public class LoginMenu : Menu
 
             [3] Exit
 
-            Choose an option:
+            Choose an option: 
             """
         );
     }

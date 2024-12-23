@@ -10,7 +10,8 @@ public class ExitApplicationCommand : Command
     public override void Execute(string inputCommand)
     {
         Console.Clear();
-        Utilities.WaitForKey("Exit the application!");
+        Console.WriteLine("Exit the application!");
+        Utilities.WaitForKey();
         Program.isRunning = false;
     }
 }
