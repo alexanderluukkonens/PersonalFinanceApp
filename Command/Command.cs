@@ -6,7 +6,22 @@ public abstract class Command
     protected IMenuService menuService;
     protected ITransactionService transactionService;
 
-    protected void DisplayTransactions(string title, DateTime startDate, DateTime endDate)
+    public Command(
+        string keyName,
+        IUserService userService,
+        IMenuService menuService,
+        ITransactionService transactionService
+    )
+    {
+        this.KeyName = keyName;
+        this.userService = userService;
+        this.menuService = menuService;
+        this.transactionService = transactionService;
+    }
+
+    public abstract void Execute(string inputCommand);
+
+    public void DisplayTransactions(string title, DateTime startDate, DateTime endDate)
     {
         Console.WriteLine($"\n{title}");
         Console.WriteLine("--------------------------------------------");
@@ -37,19 +52,4 @@ public abstract class Command
 
         Utilities.WaitForKey();
     }
-
-    public Command(
-        string keyName,
-        IUserService userService,
-        IMenuService menuService,
-        ITransactionService transactionService
-    )
-    {
-        this.KeyName = keyName;
-        this.userService = userService;
-        this.menuService = menuService;
-        this.transactionService = transactionService;
-    }
-
-    public abstract void Execute(string inputCommand);
 }

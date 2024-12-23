@@ -1,6 +1,6 @@
-public class ViewCustomTransactionsCommand : Command
+public class CustomTransactionsCommand : Command
 {
-    public ViewCustomTransactionsCommand(
+    public CustomTransactionsCommand(
         IUserService userService,
         IMenuService menuService,
         ITransactionService transactionService

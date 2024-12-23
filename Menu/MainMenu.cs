@@ -11,8 +11,8 @@ public class MainMenu : Menu
         AddCommand(new LogOutUserCommand(userService, menuService, transactionService));
         AddCommand(new AddTransactionCommand(userService, menuService, transactionService));
         AddCommand(new DeleteTransactionCommand(userService, menuService, transactionService));
-        AddCommand(new ShowCurrentBalanceCommand(userService, menuService, transactionService));
-        AddCommand(new ShowTransactionsCommand(userService, menuService, transactionService));
+        AddCommand(new CurrentBalanceCommand(userService, menuService, transactionService));
+        AddCommand(new TransactionsCommand(userService, menuService, transactionService));
         AddCommand(
             new ExitApplicationCommand(userService, menuService, transactionService)
             {

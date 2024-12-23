@@ -12,7 +12,7 @@ public class TransactionMenu : Menu
         );
         AddCommand(new WeeklyTransactionsCommand(userService, menuService, transactionService));
         AddCommand(new DailyTransactionsCommand(userService, menuService, transactionService));
-        AddCommand(new ViewCustomTransactionsCommand(userService, menuService, transactionService));
+        AddCommand(new CustomTransactionsCommand(userService, menuService, transactionService));
         AddCommand(new GobackInMenuCommand(userService, menuService, transactionService));
     }
 
@@ -22,11 +22,11 @@ public class TransactionMenu : Menu
             """
             Transactions
             ---------------------------------------------
-            [1] Show yearly transactions
-            [2] Show monthly transactions
-            [3] Show weekly transactions
-            [4] Show daily transactions
-            [5] View custom date range
+            [1] Yearly transactions
+            [2] Monthly transactions
+            [3] Weekly transactions
+            [4] Daily transactions
+            [5] Custom date range
 
             [6] Back to main menu
                    
