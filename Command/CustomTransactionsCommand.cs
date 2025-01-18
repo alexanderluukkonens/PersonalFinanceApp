@@ -1,3 +1,5 @@
+using System.Runtime.InteropServices;
+
 public class CustomTransactionsCommand : Command
 {
     public CustomTransactionsCommand(
@@ -9,6 +11,7 @@ public class CustomTransactionsCommand : Command
 
     public override void Execute(string inputCommand)
     {
+        DisplayTransactionsMenu displayTransactions = new DisplayTransactionsMenu(transactionService);
         Console.Clear();
         Console.WriteLine("Enter start date (yyyy-MM-dd):");
         if (!DateTime.TryParse(Console.ReadLine(), out DateTime startDate))
@@ -25,7 +28,7 @@ public class CustomTransactionsCommand : Command
             Console.ReadKey();
             return;
         }
-
-        DisplayTransactions("Custom Date Range Transactions", startDate, endDate);
+        Console.Clear();
+        displayTransactions.DisplayTransactions("Custom Date Range Transactions", startDate, endDate);
     }
 }

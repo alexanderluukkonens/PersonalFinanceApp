@@ -4,4 +4,5 @@ public interface IUserService
     User? Login(string username, string password);
     void Logout();
     User? GetLoggedInUser();
+    string HandlePasswordInput();
 }

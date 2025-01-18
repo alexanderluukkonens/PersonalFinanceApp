@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexa\\Desktop\\Programmering\\IndividuellUppgiftDatabaser\\IndividuellUppgiftDatabaser.csproj": {}
+    "C:\\Users\\alexa\\Code\\IndividuellUppgiftDatabaser\\IndividuellUppgiftDatabaser.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexa\\Desktop\\Programmering\\IndividuellUppgiftDatabaser\\IndividuellUppgiftDatabaser.csproj": {
+    "C:\\Users\\alexa\\Code\\IndividuellUppgiftDatabaser\\IndividuellUppgiftDatabaser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexa\\Desktop\\Programmering\\IndividuellUppgiftDatabaser\\IndividuellUppgiftDatabaser.csproj",
+        "projectUniqueName": "C:\\Users\\alexa\\Code\\IndividuellUppgiftDatabaser\\IndividuellUppgiftDatabaser.csproj",
         "projectName": "IndividuellUppgiftDatabaser",
-        "projectPath": "C:\\Users\\alexa\\Desktop\\Programmering\\IndividuellUppgiftDatabaser\\IndividuellUppgiftDatabaser.csproj",
+        "projectPath": "C:\\Users\\alexa\\Code\\IndividuellUppgiftDatabaser\\IndividuellUppgiftDatabaser.csproj",
         "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexa\\Desktop\\Programmering\\IndividuellUppgiftDatabaser\\obj\\",
+        "outputPath": "C:\\Users\\alexa\\Code\\IndividuellUppgiftDatabaser\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,6 +44,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Npgsql": {
               "target": "Package",
               "version": "[9.0.1, )"
@@ -67,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

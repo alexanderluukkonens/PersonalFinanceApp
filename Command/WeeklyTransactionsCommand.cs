@@ -9,11 +9,20 @@ public class WeeklyTransactionsCommand : Command
 
     public override void Execute(string inputCommand)
     {
-        Console.Clear();
-        var now = DateTime.Now;
-        var startDate = now.AddDays(-(int)now.DayOfWeek);
-        var endDate = startDate.AddDays(6);
-
-        DisplayTransactions("Weekly Transactions", startDate, endDate);
+        DisplayTransactionsMenu displayTransactions = new DisplayTransactionsMenu(transactionService);
+        try
+        {
+            Console.Clear();
+            var now = DateTime.Now;
+            var startDate = now.AddDays(-(int)now.DayOfWeek);
+            var endDate = startDate.AddDays(6);
+            displayTransactions.DisplayTransactions("Weekly Transactions", startDate, endDate);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("An error occurred while retrieving weekly transactions.");
+            Console.WriteLine($"Error details: {ex.Message}");
+            Console.ReadKey();
+        }
     }
 }

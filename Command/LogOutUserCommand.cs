@@ -9,10 +9,20 @@ public class LogOutUserCommand : Command
 
     public override void Execute(string inputCommand)
     {
-        userService.Logout();
-        Console.Clear();
-        menuService.SetMenu(new LoginMenu(userService, menuService, transactionService));
-        Console.WriteLine("Logged out!");
-        Utilities.WaitForKey();
+        try
+        {
+            userService.Logout();
+            Console.Clear();
+            menuService.SetMenu(new LoginMenu(userService, menuService, transactionService));
+            Console.WriteLine("Successfully logged out!");
+            Utilities.WaitForKey();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("An error occurred while logging out.");
+            Console.WriteLine($"Error details: {ex.Message}");
+            Console.WriteLine("Press any key to try again.");
+            Console.ReadKey();
+        }
     }
 }

@@ -9,7 +9,7 @@ public class DeleteTransactionCommand : Command
 
     public override void Execute(string inputCommand)
     {
-       Utilities.MenuHeading("Delete transaction");
+        Utilities.MenuHeading("Delete transaction");
 
         try
         {
@@ -26,7 +26,7 @@ public class DeleteTransactionCommand : Command
             Console.WriteLine("Index\tDate\t\tAmount\t\tDescription");
             Console.WriteLine("----------------------------------------------------");
 
-            // Visa transaktioner med index
+
             for (int i = 0; i < transactions.Count; i++)
             {
                 var transaction = transactions[i];
@@ -51,7 +51,7 @@ public class DeleteTransactionCommand : Command
                 return;
             }
 
-            // Hämta transaktionen baserat på index
+
             var selectedTransaction = transactions[index - 1];
 
             transactionService.DeleteTransaction(selectedTransaction.Transaction_id);

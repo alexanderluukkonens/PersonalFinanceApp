@@ -38,3 +38,4 @@ C:\Users\alexa\Desktop\Programmering\IndividuellUppgiftDatabaser\obj\Debug\net8.
 C:\Users\alexa\Desktop\Programmering\IndividuellUppgiftDatabaser\obj\Debug\net8.0\IndividuellUppgiftDatabaser.pdb
 C:\Users\alexa\Desktop\Programmering\IndividuellUppgiftDatabaser\obj\Debug\net8.0\IndividuellUppgiftDatabaser.genruntimeconfig.cache
 C:\Users\alexa\Desktop\Programmering\IndividuellUppgiftDatabaser\obj\Debug\net8.0\ref\IndividuellUppgiftDatabaser.dll
+C:\Users\alexa\Code\IndividuellUppgiftDatabaser\bin\Debug\net8.0\BCrypt.Net-Next.dll
