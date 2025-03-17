@@ -235,11 +235,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexa\\Code\\IndividuellUppgiftDatabaser\\IndividuellUppgiftDatabaser.csproj",
+      "projectUniqueName": "C:\\Users\\alexa\\Code\\PersonalFinanceApp\\IndividuellUppgiftDatabaser.csproj",
       "projectName": "IndividuellUppgiftDatabaser",
-      "projectPath": "C:\\Users\\alexa\\Code\\IndividuellUppgiftDatabaser\\IndividuellUppgiftDatabaser.csproj",
+      "projectPath": "C:\\Users\\alexa\\Code\\PersonalFinanceApp\\IndividuellUppgiftDatabaser.csproj",
       "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexa\\Code\\IndividuellUppgiftDatabaser\\obj\\",
+      "outputPath": "C:\\Users\\alexa\\Code\\PersonalFinanceApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -297,7 +297,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.104/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
